@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Jan 2022 pada 13.23
+-- Waktu pembuatan: 07 Jan 2022 pada 17.10
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.1.30
 
@@ -117,7 +117,7 @@ CREATE TABLE `tb_gudang` (
 
 INSERT INTO `tb_gudang` (`id_gudang`, `nama_gudang`, `alamat`, `keterangan`) VALUES
 ('124', 'BJM TECH WAREHOUSE', 'JLN. AYANI KM. 10', 'Gudang Utama'),
-('22', 'MARTAPURA TECH WAREHOUSE', 'hksn', 'gede');
+('1245', 'PALANGKARAYA TECH WAREHOUSE ', 'JLN. AYANI KM. 13', 'Gudang Utama');
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ CREATE TABLE `tb_supplier` (
 --
 
 INSERT INTO `tb_supplier` (`id_supplier`, `nama_supplier`, `nama_barang`, `tanggal`, `telepon`, `alamat`, `keterangan`) VALUES
-('27', 'psu', 'vga', '2021-12-01', 1234, 'eded', 'dd'),
+('27', 'psu', 'vga', '2021-12-02', 1234, 'eded', 'dd'),
 ('32', 'SINARINDO', 'RTX 2080 TI', '2022-01-01', 87868767, 'Jln.Agasa', 'Baru');
 
 -- --------------------------------------------------------
@@ -183,7 +183,10 @@ CREATE TABLE `tb_user` (
 INSERT INTO `tb_user` (`id`, `username`, `password`) VALUES
 (1, 'admin', 'admin'),
 (2, 'test', 'test'),
-(3, 'yoga', 'coba');
+(3, 'yoga', 'coba'),
+(4, 'haha', '1234'),
+(5, 'test1', 'test1'),
+(6, 'user', 'user');
 
 --
 -- Indexes for dumped tables
@@ -239,7 +242,7 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
